@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>File Path</th>
+        <th>Pred</th>
+        <th>Upload Date & Time</th>
+    </tr>
+    {% for inf in images %}
+        <tr>
+            <td>{{ inf.pk }}</td>
+            <td>{{ inf.save_files }}</td>
+            <td>{{ inf.predict }}</td>
+            <td>{{ inf.pub_date }}</td>
+            
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}

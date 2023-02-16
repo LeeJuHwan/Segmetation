@@ -1,0 +1,8 @@
+**/*.ipynb
+**/media
+**/venv
+**/venvs
+**/**/__pycache__
+**/**/**/__pycache__
+**/**/**/**/__pycache__
+

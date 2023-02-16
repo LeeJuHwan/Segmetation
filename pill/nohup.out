@@ -1,0 +1,87 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/jupyter", line 5, in <module>
+    from jupyter_core.command import main
+ModuleNotFoundError: No module named 'jupyter_core'
+[I 2023-02-10 10:19:48.055 ServerApp] ipyparallel | extension was successfully linked.
+[W 2023-02-10 10:19:48.058 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-02-10 10:19:48.061 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-02-10 10:19:48.066 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2023-02-10 10:19:48.067 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-02-10 10:19:48.069 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[W 2023-02-10 10:19:48.071 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-10 10:19:48.073 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[W 2023-02-10 10:19:48.077 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[I 2023-02-10 10:19:48.576 ServerApp] nb_conda | extension was found and enabled by nbclassic. Consider moving the extension to Jupyter Server's extension paths.
+[I 2023-02-10 10:19:48.576 ServerApp] nb_conda | extension was successfully linked.
+[I 2023-02-10 10:19:48.576 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-02-10 10:19:50.260 ServerApp] [nb_conda_kernels] enabled, 9 kernels found
+[I 2023-02-10 10:19:50.407 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-02-10 10:19:50.410 ServerApp] Loading IPython parallel extension
+[I 2023-02-10 10:19:50.411 ServerApp] ipyparallel | extension was successfully loaded.
+[I 2023-02-10 10:19:50.412 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/envs/tensorflow2_p38/lib/python3.8/site-packages/jupyterlab
+[I 2023-02-10 10:19:50.412 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/envs/tensorflow2_p38/share/jupyter/lab
+[I 2023-02-10 10:19:50.416 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-02-10 10:19:50.417 ServerApp] [nb_conda] enabled
+[I 2023-02-10 10:19:50.417 ServerApp] nb_conda | extension was successfully loaded.
+[I 2023-02-10 10:19:50.418 ServerApp] Serving notebooks from local directory: /home/lab06/docker_server/pill
+[I 2023-02-10 10:19:50.418 ServerApp] Jupyter Server 1.17.0 is running at:
+[I 2023-02-10 10:19:50.418 ServerApp] http://ip-172-31-31-121:8906/lab
+[I 2023-02-10 10:19:50.418 ServerApp]  or http://127.0.0.1:8906/lab
+[I 2023-02-10 10:19:50.418 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2023-02-10 10:19:56.177 ServerApp] 302 GET / (58.120.204.126) 0.71ms
+[W 2023-02-10 10:19:58.774 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-02-10 10:19:59.302 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&1675991998948 (58.120.204.126): No such file or directory: Untitled.ipynb
+[W 2023-02-10 10:19:59.302 ServerApp] No such file or directory: Untitled.ipynb
+[W 2023-02-10 10:19:59.303 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&1675991998948 (58.120.204.126) 1.50ms referer=http://52.198.149.23:8906/lab?
+[W 2023-02-10 10:19:59.316 ServerApp] 404 GET /api/contents/shape_model.ipynb?content=0&1675991998948 (58.120.204.126): No such file or directory: shape_model.ipynb
+[W 2023-02-10 10:19:59.317 ServerApp] No such file or directory: shape_model.ipynb
+[W 2023-02-10 10:19:59.317 ServerApp] 404 GET /api/contents/shape_model.ipynb?content=0&1675991998948 (58.120.204.126) 4.17ms referer=http://52.198.149.23:8906/lab?
+[W 2023-02-10 10:19:59.323 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1675991998949 (58.120.204.126): No such file or directory: Untitled1.ipynb
+[W 2023-02-10 10:19:59.323 ServerApp] No such file or directory: Untitled1.ipynb
+[W 2023-02-10 10:19:59.323 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1675991998949 (58.120.204.126) 0.93ms referer=http://52.198.149.23:8906/lab?
+[W 2023-02-10 10:19:59.339 ServerApp] 404 GET /api/contents/prediction.py?content=0&1675991998950 (58.120.204.126): No such file or directory: prediction.py
+[W 2023-02-10 10:19:59.339 ServerApp] No such file or directory: prediction.py
+[W 2023-02-10 10:19:59.339 ServerApp] 404 GET /api/contents/prediction.py?content=0&1675991998950 (58.120.204.126) 0.85ms referer=http://52.198.149.23:8906/lab?
+[I 2023-02-10 15:49:41.034 ServerApp] 302 GET / (211.47.115.40) 0.53ms
+[W 2023-02-10 15:49:44.373 LabApp] Could not determine jupyterlab build status without nodejs
+[C 2023-02-10 19:00:01.700 ServerApp] received signal 15, stopping
+[I 2023-02-10 19:00:01.701 ServerApp] Shutting down 4 extensions
+[I 2023-02-10 19:00:01.701 ServerApp] Shutting down 0 kernels
+[I 2023-02-10 19:00:01.702 ServerApp] Shutting down 0 terminals
+[I 2023-02-14 16:17:46.570 ServerApp] ipyparallel | extension was successfully linked.
+[W 2023-02-14 16:17:46.574 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-02-14 16:17:46.577 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2023-02-14 16:17:46.582 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2023-02-14 16:17:46.583 ServerApp] jupyterlab | extension was successfully linked.
+[W 2023-02-14 16:17:46.585 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[W 2023-02-14 16:17:46.587 NotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-02-14 16:17:46.588 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[W 2023-02-14 16:17:46.593 NotebookApp] Config option `kernel_spec_manager_class` not recognized by `NotebookApp`.
+[I 2023-02-14 16:17:46.774 ServerApp] nb_conda | extension was found and enabled by nbclassic. Consider moving the extension to Jupyter Server's extension paths.
+[I 2023-02-14 16:17:46.774 ServerApp] nb_conda | extension was successfully linked.
+[I 2023-02-14 16:17:46.774 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-02-14 16:17:47.322 ServerApp] [nb_conda_kernels] enabled, 9 kernels found
+[I 2023-02-14 16:17:47.379 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-02-14 16:17:47.381 ServerApp] Loading IPython parallel extension
+[I 2023-02-14 16:17:47.382 ServerApp] ipyparallel | extension was successfully loaded.
+[I 2023-02-14 16:17:47.383 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/envs/tensorflow2_p38/lib/python3.8/site-packages/jupyterlab
+[I 2023-02-14 16:17:47.383 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/envs/tensorflow2_p38/share/jupyter/lab
+[I 2023-02-14 16:17:47.386 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-02-14 16:17:47.387 ServerApp] [nb_conda] enabled
+[I 2023-02-14 16:17:47.387 ServerApp] nb_conda | extension was successfully loaded.
+[I 2023-02-14 16:17:47.388 ServerApp] Serving notebooks from local directory: /home/lab06/docker_server/pill
+[I 2023-02-14 16:17:47.388 ServerApp] Jupyter Server 1.17.0 is running at:
+[I 2023-02-14 16:17:47.388 ServerApp] http://ip-172-31-31-121:8906/lab
+[I 2023-02-14 16:17:47.388 ServerApp]  or http://127.0.0.1:8906/lab
+[I 2023-02-14 16:17:47.388 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2023-02-14 16:17:51.536 ServerApp] 302 GET / (58.120.204.126) 0.80ms
+[W 2023-02-14 16:17:53.902 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2023-02-14 16:17:54.325 ServerApp] 404 GET /api/contents/shape_model.ipynb?content=0&1676359074237 (58.120.204.126): No such file or directory: shape_model.ipynb
+[W 2023-02-14 16:17:54.326 ServerApp] No such file or directory: shape_model.ipynb
+[W 2023-02-14 16:17:54.326 ServerApp] 404 GET /api/contents/shape_model.ipynb?content=0&1676359074237 (58.120.204.126) 1.37ms referer=http://52.198.149.23:8906/lab?
+[W 2023-02-14 16:17:54.336 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1676359074237 (58.120.204.126): No such file or directory: Untitled1.ipynb
+[W 2023-02-14 16:17:54.337 ServerApp] No such file or directory: Untitled1.ipynb
+[W 2023-02-14 16:17:54.337 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1676359074237 (58.120.204.126) 0.76ms referer=http://52.198.149.23:8906/lab?
+[I 2023-02-14 16:18:13.365 ServerApp] Creating new notebook in 
+[I 2023-02-14 16:18:13.655 ServerApp] Kernel started: 0d6ee29c-4c4e-4966-97a3-be7bc2eaa014
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
