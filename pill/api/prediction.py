@@ -1,11 +1,12 @@
 import numpy as np
 from PIL import Image
 import pickle
-from keras.models import load_model
 import asyncio
 import time
 # from django.core.cache import cache
-from api.load import LoadConfig
+import os
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
+
 
 start = time.time()
 with open("api/index.pkl", "rb") as r :
@@ -31,10 +32,8 @@ with open("api/index.pkl", "rb") as r :
 async def shape_pred(path_:str, model_) -> str:
     start = time.time()
     """_summary_
-
     Args:
         path_ (str): _description_
-
     Returns:
         str: _description_
     """

@@ -1,7 +1,7 @@
 from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import render
 def index(request) :
-    return render(request, "main.html")
+    return render(request, "body.html")
 
 def error_404_view(request, exception) :
     return render(request, "404.html")

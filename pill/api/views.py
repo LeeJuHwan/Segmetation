@@ -7,9 +7,11 @@ from django.views.generic import ListView, CreateView, TemplateView, FormView
 from django.shortcuts import redirect
 import asyncio
 import time
-from api.load import LoadConfig
+from pill.load import LoadConfig
 from datetime import datetime
 from api.prediction import shape_pred
+import os
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 
 model = LoadConfig.model
 
@@ -25,6 +27,7 @@ class ImageUploadView(CreateView):
         images.save()
         media = FileUpload.objects.get(save_files=images.save_files).save_files.path
         images.predict_shape = asyncio.run(shape_pred(media, model))
+        images.predict_color = "None"
         images.save()
         return super().form_valid(form)
 
