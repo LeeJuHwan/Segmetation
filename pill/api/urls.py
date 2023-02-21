@@ -12,8 +12,10 @@ urlpatterns = [
     # path('', views.fbv_upload, name = 'index'),
     # path('', views.CreateImageView.as_view(), name = 'index'),
     # path('', include(router.urls))
-    path('',views.ImageUploadView.as_view(), name = 'index'),
-    path("list/", views.ImageDetailView.as_view(), name = "img_list")
+    path('cam/',views.ImageUploadView.as_view(), name = 'find_image'),
+    path("list/", views.ImageDetailView.as_view(), name = "img_list"),
+    path("f", views.test, name = "test"),
+    path("", views.tab_test, name = "index")
 ]
  
 if settings.DEBUG: 

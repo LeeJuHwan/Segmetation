@@ -38,7 +38,11 @@ class ImageDetailView(TemplateView) :
         context['images'] = FileUpload.objects.all()
         return context
     
+def tab_test(request) :
+    return render(request, "api/tab.html")
 
+def test(request) :
+    return render(request, "api/cam_test.html")
 # class PredictView(View):
 #     def post(self, request, * args, **kwargs):
 #         # Load the deep learning model

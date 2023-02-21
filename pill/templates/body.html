@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="{% static 'css/body.css' %}">
 
 
-
 {% include "search-bar.html" %}
 <div class = main-box>
     <article>
@@ -16,10 +15,10 @@
     <article class = "menu-article">
         <ul class="menu-list">
             <li id="btn-box">
-                <div>
+                <a href="{% url 'api:index' %}" class="btn-box anchor"><div>
                     <img src="{% static 'img/Pill.png' %}" alt="">
-                <a href="{% url 'api:index' %}"><p id ="menu-in-text">의약품 검색</p></a>
-                </div>
+                <p id ="menu-in-text">의약품 검색</p>
+                </div></a>
             </li>
             <li id="btn-box">
                 <div>
@@ -51,20 +50,52 @@
     </ul>
 </div>
 
-<div class="carousel-wrapper">
-    <div class="carousel">
-      <img class="carousel_item next" src="{% static 'img/doctors.png' %}" />
-      <img class="carousel_item" src="{% static 'img/test1.jpg' %}" />
-      <img class="carousel_item" src="{% static 'img/test2.jpg' %}" />
-      <img class="carousel_item" src="{% static 'img/test3.jpg' %}" />
-      <img class="carousel_item prev" src="{% static 'img/test4.jpg' %}" />
-      <img class="carousel_item active" src="{% static 'img/test5.jpg' %}" /> 
-
-      <div class="carousel_button--next"></div>
-      <div class="carousel_button--prev"></div>
+<section class="Per-wrapper">
+    <div class="per-carousel carousel-two">
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test1.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test2.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test3.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test4.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test5.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/doctors.png' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <h3 class="per-title">7</h3>
+            </div>
+        </div>
     </div>
-  </div>
-  
-<script src="{% static 'javascript.js' %}"></script>
+    <div class="per-control">
+        <div class="per-line"><div class="actual-line"></div></div>
+    </div>
+</section>
+
+					
+</body>
+
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="{% static 'javascript.js' %}"></script>
 {% endblock content %}

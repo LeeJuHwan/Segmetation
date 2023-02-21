@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/tab.css' %}">
+<body>
+    
+{% include 'search-bar.html' %}
+
+    <div class="container">
+        <div class = "main-box">
+            <div class = "main-box-inline">
+                <p class = "tab-main-text">의약품 검색</p>
+             </div>
+        <div class = "filter-li">
+        <ul class="tabs">
+          <li class="tab-link current" data-tab="tab-1">통합 검색</li>
+          <li class="tab-link" data-tab="tab-2">약품명 검색</li>
+          <li class="tab-link" data-tab="tab-3">이미지 검색</li>
+        </ul>
+    </div>
+    </div>
+</div>
+    <section3 class = "content-box">
+        <hr class = "horizontal-line">
+            <div id="tab-1" class="tab-content current">
+                <ul>
+                    <li class = "content-logo-font">통합 검색 안내</li>
+                    <li class = "content-in-font">통합 검색은 약품명, 성분명을 한 번에 검색하여 결과를 보여줍니다.</li>
+                </ul>
+                <!-- 앵커 태크 -->
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><i class="fa-solid fa-clipboard"></i></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">약품명 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                <hr class = "horizontal-line">
+                <a href="{% url 'api:find_image' %}" class ="anchor"><div class = "content-in-icon">
+                    <div class = "icon-area"><i class="fa-solid fa-camera"></i></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">이미지 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div></a>
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><p class="icon-content">DUR</p></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">약품명 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tab-2" class="tab-content">
+            <p class = "content-logo-font">통합 검색 안내</p>
+                <p class = "content-in-font">통합 검색은 약품명, 성분명을 한 번에 검색하여 결과를 보여줍니다.</p>
+                <!-- 앵커 태크 -->
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><i class="fa-solid fa-clipboard"></i></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">약품명 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><i class="fa-solid fa-camera"></i></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">이미지 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><p class="icon-content">DUR</p></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">약품명 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-3" class="tab-content">
+            <p class = "content-logo-font">통합 검색 안내</p>
+                <p class = "content-in-font">통합 검색은 약품명, 성분명을 한 번에 검색하여 결과를 보여줍니다.</p>
+                <!-- 앵커 태크 -->
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><i class="fa-solid fa-clipboard"></i></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">약품명 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><i class="fa-solid fa-camera"></i></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">이미지 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                <hr class = "horizontal-line">
+                <div class = "content-in-icon">
+                    <div class = "icon-area"><p class="icon-content">DUR</p></div>
+                        <ul class = "content-in-display">
+                            <li class = "content-sub-font">약품명 검색</li>
+                            <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <hr class = "horizontal-line">    
+    </section3>
+
+
+
+<script src="https://kit.fontawesome.com/785dee2ce7.js" crossorigin="anonymous"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src = "{% static 'tab.js' %}"></script>
+</body>
+
+{% endblock content %}

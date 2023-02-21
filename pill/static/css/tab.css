@@ -1,0 +1,136 @@
+body{
+    margin-top: 100px;
+    font-family: 'Trebuchet MS', serif;
+    line-height: 1.6
+  }
+
+.horizontal-line{
+  background: rgb(200 192 192 / 50%);
+  height: 1px;
+  border: 0;
+}
+  
+.container{
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+
+.main-box-inline{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #27295B;    
+}
+.tab-main-text {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.filter-li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul.tabs{
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0px;
+  list-style: none;
+  }
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+ul.tabs li.current{
+    background: #CAF2FF;
+    color: #222;
+  }
+  
+.content-logo-font{
+  color: #27295B;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.content-in-font{
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 1.3rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  list-style: none;
+}
+
+
+.content-sub-font{
+  list-style: none;
+  margin-top: 1rem;
+  color: #27295B;
+  font-size: 1.3rem;
+  margin-left: 1.3rem;
+}
+
+.content-in-icon{
+  display: flex;
+  align-items: center;
+}
+
+
+.tab-content{
+    display: none;
+    /* background: #fff; */
+    background: rgba(255, 255, 255, 0);
+    padding: 15px;
+  }
+  
+.tab-content.current{
+    display: inherit;
+  }
+
+.fa-solid{
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #27295B;
+}
+
+.icon-content{
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: Bold;
+  color: #27295B;
+}
+
+.icon-area{
+  justify-content: center;
+  background: #CAF2FF;
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.content-box{
+  position: absolute;
+  left: 50%;
+  top: 31rem;
+  transform: translate(-50%, -50%);
+  background: #ffffff00;
+  min-width: 400px;
+  padding: 0px 0px;
+}
+
+.anchor{
+  cursor: pointer;
+  color: #27295B;
+}
