@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/body.css' %}">
+
+
+{% include "search-bar.html" %}
+<div class = main-box>
+    <article>
+        <img src="{% static 'img/doctors.png' %}" alt="doctor banner imgs">
+    </article>
+</div>
+
+<div class = "btn-list">
+    <article class = "menu-article">
+        <ul class="menu-list">
+            <li id="btn-box">
+                <a href="{% url 'api:index' %}" class="btn-box anchor"><div>
+                    <img src="{% static 'img/Pill.png' %}" alt="">
+                <p id ="menu-in-text">의약품 검색</p>
+                </div></a>
+            </li>
+            <li id="btn-box">
+                <div>
+                    <img src="{% static 'img/Pill.png' %}" alt="">
+                <p id ="menu-in-text">질병 정보</p>
+                </div>
+            </li>
+            <li id="btn-box">
+                <div>
+                    <img src="{% static 'img/Pill.png' %}" alt="">
+                <p id ="menu-in-text">복약 관리</p>
+                </div>
+            </li>
+            <li id="btn-box">
+                <div>
+                    <img src="{% static 'img/Pill.png' %}" alt="">
+                <p id ="menu-in-text">이용 문의</p>
+                </div>
+            </li>
+        </ul>
+    </article>
+</div>
+<hr class = "horizontal-line">
+<div>
+    <ul class="banner-ul">
+        <li class = "notice-text">공지사항</li>
+        <li class = "more-text">더보기 >
+        </li>
+    </ul>
+</div>
+
+<section class="Per-wrapper">
+    <div class="per-carousel carousel-two">
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test1.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test2.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test3.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test4.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/test5.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <img src="{% static 'img/doctors.png' %}" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <h3 class="per-title">7</h3>
+            </div>
+        </div>
+    </div>
+    <div class="per-control">
+        <div class="per-line"><div class="actual-line"></div></div>
+    </div>
+</section>
+
+					
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="{% static 'javascript.js' %}"></script>
+{% endblock content %}
