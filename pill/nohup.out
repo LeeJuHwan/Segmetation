@@ -85,3 +85,7 @@ ModuleNotFoundError: No module named 'jupyter_core'
 [I 2023-02-14 16:18:13.365 ServerApp] Creating new notebook in 
 [I 2023-02-14 16:18:13.655 ServerApp] Kernel started: 0d6ee29c-4c4e-4966-97a3-be7bc2eaa014
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+python3: can't open file 'magage.py': [Errno 2] No such file or directory
+python3: can't open file 'magage.py': [Errno 2] No such file or directory
+python3: can't open file 'magage.py': [Errno 2] No such file or directory
+python3: can't open file 'magage.py': [Errno 2] No such file or directory
