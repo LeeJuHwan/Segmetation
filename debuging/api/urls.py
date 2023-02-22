@@ -15,7 +15,8 @@ urlpatterns = [
     path('cam/',views.ImageUploadView.as_view(), name = 'find_image'),
     path("list/", views.ImageDetailView.as_view(), name = "img_list"),
     path("f", views.test, name = "test"),
-    path("", views.tab_test, name = "index")
+    path("", views.tab_test, name = "index"),
+    path("search_result", views.search_result, name="search_result")
 ]
  
 if settings.DEBUG: 
