@@ -14,6 +14,10 @@ def tab_test(request) :
 
 def test(request) :
     return render(request, "api/cam_test.html")
+
+def search_result(request):
+    return render(request, "api/search_result.html")
+
 class ImageUploadView(CreateView):
     model = FileUpload
     fields = "__all__"
