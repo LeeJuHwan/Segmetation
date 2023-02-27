@@ -8,11 +8,7 @@
 ### 문제 정의
 - 의료진의 약 식별 업무 의뢰율이 굉장히 높은 77% 이상에 달하는 통계치를 확인 했습니다. 그렇다면, 왜 **약 식별 업무**가 현재 의료업계에 어려움을 내비추고 있을까요?
 
-<<<<<<< HEAD
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/118493627/221562110-b5389244-9aa2-4a92-9fe3-925b69028657.png">
-=======
 <img width="350" height="300" alt="image" src="https://user-images.githubusercontent.com/118493627/221562110-b5389244-9aa2-4a92-9fe3-925b69028657.png">
->>>>>>> f88b806d1e3fa49d9030c786e4675e7255419503
 
 
 1. 픽토그램 또는, 텍스트가 **시선의 차이**로 다른 글씨로 인식 되는 형태 일 때
