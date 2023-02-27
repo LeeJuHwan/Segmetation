@@ -42,7 +42,7 @@
 
 - 클래스 중, 식별 문자의 한글 데이터는 전체 데이터셋에 5%정도 존재 하였고 실제 OCR 기법을 이용 했을 때 문자가 인식되지 못한 점에서 제외하였다.
 
-### 모델 아키텍처
+### 모델 프로세스
 <img width="1200" alt="image" src="https://user-images.githubusercontent.com/118493627/221573628-8da040a9-5de1-4bb5-b08f-f5b852a4d252.png">
 
 1. Object detection **Yolo v7**
