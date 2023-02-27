@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/body.css' %}">
+
+
+<!-- {% include "search-bar.html" %} -->
+<div class = main-box>
+    <article>
+        <img src="{% static 'img/doctors.png' %}" alt="doctor banner imgs">
+    </article>
+</div>
+
+<div class = "btn-list">
+    <article class = "menu-article">
+        <ul class="menu-list">
+            <li id="btn-box">
+                <a href="{% url 'api:index' %}" class="btn-box anchor"><div>
+                    <img src="{% static 'img/text_search.png' %}" alt="">
+                <p id ="menu-in-text">약품명 검색</p>
+                </div></a>
+            </li>
+            <li id="btn-box">
+                <a href="{% url 'api:find_image' %}" class="btn-box anchor"><div>
+                    <img src="{% static 'img/pill_search.png' %}" alt="">
+                <p id ="menu-in-text">이미지 검색</p>
+                </div></a>
+            </li>
+            <li id="btn-box">
+                <a href="mailto:sesac@sba.seoul.kr" class="btn-box anchor"><div>
+                    <img src="{% static 'img/Mail.png' %}" alt="">
+                <p id ="menu-in-text">이용 문의</p>
+                </div></a>
+            </li>
+            <!-- <li id="btn-box">
+                <div>
+                    <img src="{% static 'img/Pill.png' %}" alt="">
+                <p id ="menu-in-text">이용 문의</p>
+                </div>
+            </li> -->
+        </ul>
+    </article>
+</div>
+<hr class = "horizontal-line">
+<!-- <div>
+    <ul class="banner-ul">
+        <li class = "notice-text">공지사항</li>
+        <a href="{% url 'notice' %}"><li class = "more-text">더보기 ></a>
+        </li>
+    </ul>
+</div> -->
+
+<section class="Per-wrapper">
+    <div class="per-carousel carousel-two">
+        <div class="item">
+            <div class="per-content">
+                <!-- 약학 정보원 -->
+                <a class="carousel_link" href="https://www.health.kr/">
+                    <img class="carousel_img" src="{% static 'img/약학정보원.jpg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <!-- 의약품식별표시 -->
+                <a class="carousel_link" href="http://www.pharm.or.kr/">
+                    <img class="carousel_img" src="{% static 'img/의약품식별표시.png' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <!-- 식약처 -->
+                <a class="carousel_link" href="https://www.mfds.go.kr/index.do">
+                    <img class="carousel_img" src="{% static 'img/식품의약품안전처.png' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="per-content">
+                <!-- 의약품관리종합정보센터 -->
+                <a class="carousel_link" href="https://biz.kpis.or.kr/">
+                    <img class="carousel_img" src="{% static 'img/의약품관리종합정보센터.jpg' %}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="per-control">
+        <div class="per-line"><div class="actual-line"></div></div>
+    </div>
+</section>
+
+					
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="{% static 'javascript.js' %}"></script>
+{% endblock content %}

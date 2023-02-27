@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+<link rel="stylesheet" href="{% static 'css/search.css' %}">
+
+
+<script src="https://kit.fontawesome.com/8eb5905426.js"></script>
+<body>
+<div class="search">
+    <form action="{% url 'api:search_word' %}" method = "get">
+      <input type="text" class = "search-bar" onkeypress="doDisplay(event)" name = "search-word">
+      <button type="submit" class="search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>File Path</th>
+        <th>Pred Shape</th>
+        <th>Pred Color</th>
+        <th>result</th>
+        <th>Upload Date & Time</th>
+    </tr>
+    {% for inf in user %}
+        <tr>
+            <td>{{ inf.data_result }}</td> 
+            <td>{{ inf.label}}</td>
+            <!-- <td>{{ inf.predict_shape }}</td>
+            <td>{{ inf.predict_color }}</td>
+            <td>{{ inf.result }}</td>
+            <td>{{ inf.pub_date }}</td> -->
+            
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}

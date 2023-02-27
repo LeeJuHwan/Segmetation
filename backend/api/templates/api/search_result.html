@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load custom %}
+{% load static %}
+
+{% block content %}
+<script src="{% static 'search_result.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/search_result.css' %}">
+
+<!-- <ul class="result_list">
+    <li>
+        <button class="dropdown_result">
+            <img src="{% static 'img/test_pill.png' %}" class="pill_crop"/>
+            <label>알약 선택</label>
+            <span class="dropdown_arrow"></span>
+        </button>
+        <ul class="pill_list">
+            <li> -->
+            <ul class="result_list">
+                {% for i in user|ranges %}
+                    <li>
+                        <button class="dropdown_result">
+                            <img src="{% static 'img/temp/' %}{{ pk }}/temp{{ i }}.jpg" class="pill_crop"/>
+                            <label>알약 선택</label>
+                            <span class="dropdown_arrow"></span>
+                        </button>
+                        <ul class="pill_list">
+                            <li>
+                    </li>
+                    {% for j in user|get_list_item:i %}
+                    <button class="pill_result">
+                        <img src="{% static 'img/origin_images/' %}{{ j }}.jpg" class = "pill_example">
+                        <label class="pill_label"><input type="radio" name="pill_{{i}}" class="pill_radio">{{j}}</label>
+                        <a href="{% url 'api:detail' %}?item_name={{j}}">상세보기</a>
+                    </button>
+                    {% endfor %}
+                    <div class="button_area">
+                        <button class="no_result">
+                            <label style="margin-left: auto; margin-right: auto;">없음</label>
+                        </button>
+                        <button class="yes_result">
+                            <label style="margin-left: auto; margin-right: auto;">확인</label>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        
+            {% endfor %}
+            <!-- <li>
+                <button class="pill_result">
+                    <img src="{% static 'img/test5.jpg' %}" class="pill_example"/>
+                    <label>알약 1</label>
+                    <input type="radio" name="pill_1" class="pill_radio">
+                </button>
+            </li> -->
+            <!-- <li>
+                <button class="pill_result">
+                    <img src="{% static 'img/test5.jpg' %}" class="pill_example"/>
+                    <label>알약 2</label>
+                    <input type="radio" name="pill_1" class="pill_radio">
+                </button>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <button class="dropdown_result">
+            <img src="{% static 'img/test_pill.png' %}" class="pill_crop"/>
+            <label>알약 선택</label>
+            <span class="dropdown_arrow"></span>
+        </button>
+        <ul class="pill_list">
+        </ul>
+    </li>
+</ul> -->
+
+{% endblock content %}

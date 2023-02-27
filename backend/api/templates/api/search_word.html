@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/tab.css' %}">
+
+<body>
+    
+{% include 'search-bar.html' %}
+
+    <div class="container">
+        <div class = "main-box">
+            <div class = "main-box-inline">
+                <p class = "tab-main-text">의약품 검색</p>
+             </div>
+        <div class = "filter-li">
+        <ul class="tabs">
+          <!-- <li class="tab-link current" data-tab="tab-1">통합 검색</li> -->
+         <!-- <li class="tab-link current" data-tab="tab-1">통합 검색</li> -->
+         <li class="tab-link" data-tab="tab-2">약품명 검색</li>
+         <li class="tab-link" data-tab="tab-3"><a href="{% url 'api:find_image'%}" class ="anchor">이미지 검색</a></li>
+
+        </ul>
+    </div>
+    </div>
+</div>
+
+<section3 class = "content-box">
+    {% for i in object_list %}
+    <hr class = "horizontal-line">
+        <a href="{% url 'api:detail' %}?item_name={{ i.ITEM_NAME }}"><div class = "result-zone">
+            <img src="{% static 'img/origin_images/' %}{{ i.ITEM_NAME }}.jpg" class ="pill_example">
+            <span class = "img-label">{{ i.ITEM_NAME }}</span>
+        </div></a>       
+                
+        
+    
+    {% endfor %}
+</section3>
+            <!-- <div class = "content-in-icon">
+                <div class = "icon-area"><i class="fa-solid fa-camera"></i></div>
+                    <ul class = "content-in-display">
+                        <li class = "content-sub-font">성분명 검색</li>
+                        <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                    </ul>
+                </div>
+            <hr class = "horizontal-line">
+            <div class = "content-in-icon">
+                <div class = "icon-area"><p class="icon-content">EDI</p></div>
+                    <ul class = "content-in-display">
+                        <li class = "content-sub-font">보험 등재코드 검색</li>
+                        <li class = "content-in-font">식품의약품안전처에 등록된 약품명 검색</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    
+
+{% endblock %}

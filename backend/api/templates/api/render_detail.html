@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+{% include 'search-bar.html' %}
+
+<section id = "main-text">
+    <div class = "main-banner-text">
+        <h1>상세 정보</h1>
+    </div>
+</section>
+
+<div class = "image-result">
+    <img src="{% static 'img/origin_images/' %}{{info_dict.img_file}}" alt="">
+</div>
+
+<div class="class_no">
+    {{ info_dict.class_no }}
+</div>
+
+<section3 class="info-box">
+    <div class="container">
+        <div class = "main-box">
+            <div class = "main-box-inline"></div>
+                <div class = "filter-li">
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">기본</li>
+                        <li class="tab-link" data-tab="tab-2">식별</li>
+                        <li class="tab-link" data-tab="tab-3">성분</li>
+                        <li class="tab-link" data-tab="tab-4">용법</li>
+                        <li class="tab-link" data-tab="tab-5">주의</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class = "content-box">
+        <div id="tab-1" class="tab-content current">
+            <ul>
+                <li>이름: {{ info_dict.name }}</li>
+                <li>구분번호: {{ info_dict.seq }}</li>
+                <li>회사명: {{ info_dict.comp }}</li>
+                <li>효능: {{ info_dict.usage }}</li>
+            </ul>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <ul>
+                <li>식별자(앞): {{ info_dict.print_front }}</li>
+                <li>식별자(뒤): {{ info_dict.print_back }}</li>
+                <li>모양: {{ info_dict.shape }}</li>
+                <li>색깔: {{ info_dict.color }}</li>
+            </ul>
+        </div>
+        <div id="tab-3" class="tab-content">
+            <ul>
+                <li>{{ info_dict.material }}</li>
+            </ul>
+        </div>
+        <div id="tab-4" class="tab-content">
+            <ul>
+                <li>{{ info_dict.method }}</li>
+            </ul>
+        </div>
+        <div id="tab-5" class="tab-content">
+            <ul>
+                <li>{{ info_dict.attention }}</li>
+            </ul>
+        </div>
+    </div>
+</section3>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="{% static 'tab.js' %}"></script>
+{% endblock content %}

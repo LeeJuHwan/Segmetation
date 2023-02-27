@@ -1,0 +1,43 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<header>
+    <div class="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        
+        <ul class="ham-menu">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#">검색</a>
+                <ul class="ham-menu-search">
+                    <li><a href="{% url 'api:index' %}">의약품 검색</a></li>
+                    <li><a href="{% url 'api:find_image' %}">이미지 검색</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+    <div class="main-logo">
+        <a href="{% url 'index' %}"><img src="{% static 'img/title.png' %}" class="main-logo-img"></img></a>
+    </div>
+
+</header>

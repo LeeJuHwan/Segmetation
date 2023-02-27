@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<body>
+    <iframe src="https://embed.lottiefiles.com/animation/21474" class = "doctors-logo"></iframe>
+    <section id = "main-text">
+        <div class = "main-banner-text">
+            <h1>의약품 촬영</h1>
+        </div>
+    </section>
+    <div class = "input-box">
+        <section id = "camera-outline">
+            <img src="{% static 'img/camera_input.png' %}" alt="" class="camera-logo btn-open-popup">
+        </section>
+       
+        <button class = "image-in-text" onclick="submitbtn(event)">사진 등록하기</button>
+        {% if error %}
+        <p style="text-align: center;">{{ error }}</p>
+    {% endif %}
+    </div>
+
+    <div class="modal">
+        <div class="modal_body">
+            <p class = "modal-warning-text">사용 전 참고 사항</p>
+            <ul class = "modal-list">
+                <li class = "modal-content">알약에 있는 <u>글씨</u> 또는 <u>그림이</u> 잘 보이게 촬영 하면 더 나은 결과가 나올 수 있습니다.</li>
+                <li class = "modal-content">전체 알약이 <u>화면에 나오도록 촬영</u> 하면 인공지능이 쉽게 탐지 할 수 있습니다.</li>
+                <li class = "modal-content"><u>배경색상</u>과 <u>알약색상</u>이 비슷한 환경이 아닐수록 더 나은 결과가 나올 수 있습니다</li>
+            </ul>
+            <p class = "modal-example">사용 예시 <i class="fa-solid fa-sort-down"></i></p>
+            <div class = "example-image-zone">
+                <img src="{% static 'img/before.jpg' %}" alt="" class = "modal-images">
+                <img src="{% static 'img/after.png' %}" alt="" class = "modal-images">
+            </div>
+            <div class = "modal-function-zone">
+                <ul>
+                    <form action="{% url 'api:find_image' %}" method="post" enctype="multipart/form-data" class = "image-form">
+                        {% csrf_token %}
+                        <li class = "modal-function-li">
+                            <i class="fa-solid fa-image"></i>
+                            <label for="ex_file">이미지로 가져오기</label> 
+                            <input type="file" name="file" class = "icon-in-text" id = "ex_file"  onchange="fileUpload(event)">
+                        </li>
+                        <li class = "modal-function-li">
+                            <i class="fa-solid fa-camera"></i>
+                            <label for="photoFile">카메라로 촬영하기</label> 
+                            <input type="file" name="file" id="photoFile" accept="image/*" capture="camera" style="display:none;" onchange="fileUpload(event)">
+                        </li>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="layerPopup">
+        <div class="loader"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/785dee2ce7.js" crossorigin="anonymous"></script>
+    <script src="{% static 'form.js' %}"></script>
+</body>
+</html>
+{% endblock content %}
