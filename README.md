@@ -17,7 +17,7 @@
 |------|---|
 |**WAS**|Python 3.8 + **Django** 4.1.6  
 |**WS**|**Nginx** + **Gunicorn**
-|**Deep learning**|**torch** 1.7.1 && torchvision 0.8.2 **tensorflow** 2.7.1 && **keras** 2.7.0 **opencv**  4.5.1.48 **keras-ocr** 0.9.2 **Yolo v7**
+|**Deep learning**|**torch** 1.7.1 && torchvision 0.8.2 <br> **tensorflow** 2.7.1 && **keras** 2.7.0 && **keras-ocr** 0.9.2 <br> **opencv** 4.5.1.48 <br> **Yolo** v7
 |**Deploy**|**AWS EC2**
 |**Database**|**PostgreSQL** with psycopg2-binary 2.9.5
 
