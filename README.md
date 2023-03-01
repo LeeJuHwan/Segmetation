@@ -56,3 +56,7 @@
 ### System Architecture
 <img width="1145" alt="image" src="https://user-images.githubusercontent.com/118493627/221577179-5029eec8-fc1b-4028-8c7b-eb79839f1795.png">
 
+### before Deep learning - dockerizing
+![제목 없는 디자인](https://user-images.githubusercontent.com/118493627/217997039-a107f29e-51a3-4b30-b541-89624af58095.png)
+- [dockerizing](https://github.com/LeeJuHwan/dockerizing)
+- GPU 환경 구성 전 사용 된 도커로 개발 환경 셋팅
